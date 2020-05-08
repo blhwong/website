@@ -4,14 +4,19 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import About from '../components/About';
+import Contact from '../components/Contact';
+
+import '../css/style.scss';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi my name is Brandon Wong</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="page" id="top">
+      <h1>Hi, my name is Brandon Wong</h1>
     </div>
+    <About />
+    <Contact />
   </Layout>
 )
 
