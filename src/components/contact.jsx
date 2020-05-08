@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "./layout"
-import Image from "./image"
-import SEO from "./seo"
+import Layout from './layout';
+import Image from './image';
+import SEO from './seo';
 
 const Contact = () => (
   <div className="page" id="contact">
@@ -13,6 +13,6 @@ const Contact = () => (
       <a href="https://angel.co/u/blhwong" target="_blank noopener noreferrer">Angel</a>
     </div>
   </div>
-)
+);
 
-export default Contact
+export default Contact;
