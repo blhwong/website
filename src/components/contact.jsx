@@ -3,11 +3,19 @@ import React from 'react';
 import github from '../images/github.svg';
 import linkedin from '../images/linkedin.png';
 import angellist from '../images/angellist.png';
+import email from '../images/email.png';
 
 function Contact() {
   return (
     <div className="page" id="contact">
       <div className="links">
+        <a
+          href="mailto:b.lh.wong@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={email} alt="email logo" />
+        </a>
         <a
           href="https://github.com/blhwong"
           target="_blank"
