@@ -26,14 +26,12 @@ function Skills() {
     <div id="skills">
       <h4>Skills</h4>
       {Object.entries(skills).map(([skill, rating]) => (
-        <div className="skill">
+        <div className="skill" key={`skill-${skill}`}>
           <div className="name">
             {skill}
           </div>
           <div className="stars">
-            {Array.from(Array(rating)).map(() => (
-              <span>&#9733;</span>
-            ))}
+            {Array.from(Array(rating)).fill(String.fromCodePoint('9733')).join('')}
           </div>
         </div>
       ))}
