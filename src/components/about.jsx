@@ -1,12 +1,29 @@
 import React from 'react';
 
+import Skills from './Skills';
+
 import trove from '../images/trove.png';
 import seagate from '../images/seagate.jpg';
+import me from '../images/me.jpg';
+
+const aboutMe = [
+  "Hi, I'm Brandon",
+  'I was born and raised in Texas.',
+  'I moved to SF in 2017 to pursue my passion in software and technology.',
+  "I've worked extensively in JavaScript with Node and React since I use it for work and personal projects,.",
+  "However, these days I'm super interested Python and Go.",
+  "I would say I'm a very curious person who enjoys learning about new tech.",
+  "I can't wait to see what's next!",
+];
 
 function About() {
   return (
     <div className="page" id="about">
       <h3>About</h3>
+      <div className="me">
+        <img src={me} alt="Brandon Wong" />
+        <p>{aboutMe.join(' ')}</p>
+      </div>
       <div className="container">
         <div className="experience">
           <h4>Experience</h4>
@@ -29,6 +46,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Skills />
     </div>
   );
 }

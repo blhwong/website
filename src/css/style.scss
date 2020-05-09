@@ -1,21 +1,3 @@
-.links {
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-  > a {
-    opacity: 0.8;
-    > img {
-      height: 40px;
-    }
-    &:hover {
-    opacity: 1;
-    }
-    &:active {
-      opacity: 0.8;
-    }
-  }
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -47,6 +29,7 @@
 }
 
 #about {
+  height: 160vh;
   flex-direction: column;
   align-items: flex-start;
   > h3 {
@@ -54,14 +37,10 @@
     margin-bottom: 5vh;
   }
   .container {
-    height: 65vh;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    .experience, .education {
-      width: 100%;
-    }
+    width: 100%;
+    flex-wrap: wrap;
     .experience {
       .wrap {
         display: flex;
@@ -81,15 +60,64 @@
     .education {
       .school {
         margin: 0 auto;
-        text-align: center;
         img {
           max-width: 200px;
         }
       }
     }
   }
+  .me {
+    display: flex;
+    justify-content: space-between;
+    > img {
+      max-width: 400px;
+    }
+    > img, p {
+      width: 50%;
+    }
+    > p {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 #contact {
-  height: 70vh;
+  height: 75vh;
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    > a {
+      opacity: 0.8;
+      > img {
+        height: 30px;
+      }
+      &:hover {
+      opacity: 1;
+      > img {
+        transform: scale(1.25);
+      }
+      }
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 5px 0;
+    .name {
+      font-size: 0.9rem;
+    }
+  }
 }
