@@ -40,7 +40,7 @@
   margin-bottom: 10vh;
   > h3 {
     margin: 0 auto;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     margin-top: 11vh;
   }
   .container {
@@ -51,7 +51,7 @@
     padding: 0 3vw;
     .experience {
       margin-bottom: 3vh;
-      min-width: 320px;
+      min-width: 30px;
       .wrap {
         display: flex;
         justify-content: space-evenly;
@@ -84,14 +84,24 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3vh;
-    > img {
-      width: 400px;
+    .image-wrap {
+      width: 50%;
+      min-width: 400px;
+      margin: 1vh auto;
+      padding: 0 1vw;
+      > img {
+        border-radius: 5px;
+        margin: 0;
+      }
     }
     > p {
       width: 50%;
-      min-width: 320px;
+      min-width: 400px;
       font-size: 0.9rem;
       margin: 1vh auto;
+      display: flex;
+      align-items: center;
+      padding: 0 5vw 0 1vw;
     }
   }
 }

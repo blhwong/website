@@ -34,7 +34,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "npm run build && gh-pages -d public -b master",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

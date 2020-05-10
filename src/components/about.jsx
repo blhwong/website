@@ -21,7 +21,9 @@ function About() {
     <div className="page" id="about">
       <h3>About</h3>
       <div className="me">
-        <img src={me} alt="Brandon Wong" />
+        <div className="image-wrap">
+          <img src={me} alt="Brandon Wong" />
+        </div>
         <p>{aboutMe.join(' ')}</p>
       </div>
       <div className="container">
