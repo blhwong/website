@@ -621,7 +621,6 @@ pre tt:after {
 nav {
   display: flex;
   justify-content: flex-end;
-  width: 250px;
   a {
     color: white;
     text-decoration: none;
@@ -643,6 +642,7 @@ nav {
     > li {
       list-style-type: none;
       margin: 0;
+      margin-left: 2vw;
     }
   }
 }
